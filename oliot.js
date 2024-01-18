@@ -12,11 +12,11 @@ standard_input.on('data', function (data) {
     process.exit()
 }
 else{
-    hakusana =data
+    hakusana =data.trim()
     
     autot.forEach(a => {
         
-        if(a.merkki === hakusana) {
+        if(a.merkki.toLowerCase().indexOf(hakusana.toLowerCase())  > -1){
             console.log("Merkki: " + a.merkki + "vm." + a.vuosimalli + "hinta " + a.hinta)
         }
 
