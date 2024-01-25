@@ -17,7 +17,7 @@ else{
     autot.forEach(a => {
         
         if(a.merkki.toLowerCase().indexOf(hakusana.toLowerCase())  > -1){
-            console.log("Merkki: " + a.merkki + "vm." + a.vuosimalli + "hinta " + a.hinta)
+            console.log("Merkki: " + a.merkki + " vm." + a.vuosimalli + " hinta " + a.hinta)
         }
 
     }
